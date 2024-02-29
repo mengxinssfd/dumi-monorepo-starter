@@ -19,8 +19,7 @@ export function AppLayout(): JSX.Element {
           <option value="dark">dark</option>
         </select>
       </header>
-
-      <section>
+      <section className={styles['body']}>
         <aside className={styles['aside']}>
           <ul>
             {baseRouter.map((item, index) => (

@@ -12,6 +12,10 @@ $h: 60px;
   line-height: $h;
   background-color: var(--aside-bg-color);
 }
+.body {
+  flex: 1;
+  display: flex;
+}
 .aside {
   $w: 230px;
 
@@ -47,5 +51,6 @@ $h: 60px;
   overflow-y: auto;
   padding: 20px;
   height: 100%;
+  flex: 1;
   box-sizing: border-box;
 }
