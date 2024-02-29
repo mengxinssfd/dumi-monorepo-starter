@@ -1,5 +1,5 @@
 import { fuzzyMatchTarget, getTargets, isMonoRepo, rootDir } from './utils';
-import minimist from 'minimist';
+// import minimist from 'minimist';
 import { execa } from 'execa';
 import * as Path from 'path';
 import Fse from 'fs-extra';
@@ -9,7 +9,7 @@ const rootPath = rootDir();
 
 const allTargets = isMonoRepo ? getTargets() : [rootPath];
 
-const args = minimist(process.argv.slice(2));
+const args = require('minimist')(process.argv.slice(2));
 const targets = args._;
 const formats = args['formats'] || args['f'];
 const sourceMap = args['sourcemap'] || args['s'];
