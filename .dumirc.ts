@@ -9,8 +9,8 @@ type ENV = 'development' | 'production';
 const map: Record<ENV, Parameters<typeof defineConfig>[0]> = {
   development: {},
   production: {
-    base: '/react-ui/',
-    publicPath: '/react-ui/',
+    // base: '/react-ui/',
+    // publicPath: '/react-ui/',
   },
 };
 const env = process.env['NODE_ENV'] as ENV;
@@ -39,7 +39,7 @@ export default defineConfig({
   },
   // apiParser: {},
   resolve: {
-    atomDirs: [{ type: 'component', dir: 'packages/components/src' }],
+    // atomDirs: [{ type: 'component', dir: 'packages/components/src' }],
     // 配置入口文件路径，API 解析将从这里开始
     // entryFile: './packages/react-ui/src/index.ts',
   },
@@ -53,8 +53,8 @@ export default defineConfig({
   //     exclude: [/^@scope\/.+/],
   //   }
   locales: [
-    { id: 'en-US', name: 'English', suffix: '' },
-    { id: 'zh-CN', name: '中文', suffix: '-cn' },
+    // { id: 'en-US', name: 'English', suffix: '' },
+    // { id: 'zh-CN', name: '中文', suffix: '-cn' },
   ],
   alias: {
     ...getAlias(),
