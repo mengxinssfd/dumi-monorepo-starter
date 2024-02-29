@@ -1,0 +1,22 @@
+{
+  "name": "playgound",
+  "version": "1.0.0",
+  "types": "dist/index.d.ts",
+  "main": "dist/index.js",
+  "private": true,
+  "scripts": {
+    "start": "vite serve --port 8080",
+    "rm:dist": "rimraf ./dist",
+    "build:this": "tsc -p tsconfig.json",
+    "build": "pnpm rm:dist && pnpm build:this",
+    "check:ts": "tsc --noEmit -p tsconfig.json",
+    "test": "react-scripts test"
+  },
+  "devDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router": "^6.11.2",
+    "react-router-dom": "^6.11.2",
+    "web-vitals": "^2.1.4"
+  }
+}

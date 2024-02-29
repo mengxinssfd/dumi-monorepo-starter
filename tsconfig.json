@@ -1,0 +1,59 @@
+{
+  "compilerOptions": {
+    // "module": "commonjs",
+    "baseUrl": "./",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "ESNext",
+    "module": "ESNext",
+    "sourceMap": true,
+    // "incremental": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": false,
+    "noFallthroughCasesInSwitch": false,
+
+    "allowJs": true,
+    "moduleResolution": "node",
+    // "suppressImplicitAnyIndexErrors": true,
+    "strict": true,
+    "resolveJsonModule": true,
+
+    "alwaysStrict": true,
+    "strictPropertyInitialization": true,
+    "strictBindCallApply": true,
+    "strictFunctionTypes": true,
+    "noImplicitThis": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "useUnknownInCatchVariables": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    //    "exactOptionalPropertyTypes": true, // ?:number 只接收number不接收undefined
+    "noImplicitReturns": true,
+    // "noFallthroughCasesInSwitch": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "allowUnusedLabels": false,
+    "allowUnreachableCode": false,
+    "jsx": "react-jsx",
+    "paths": {
+      "@pkg/*": ["./packages/*/src"],
+      "@@/*": [".dumi/tmp/*"]
+    }
+  },
+  "include": [
+    ".dumi",
+    "docs",
+    "internal",
+    "packages",
+    "scripts",
+    ".dumirc.ts",
+    ".fatherrc.ts",
+    "utils"
+  ],
+  "exclude": ["node_modules", "dist", "tmp"]
+}

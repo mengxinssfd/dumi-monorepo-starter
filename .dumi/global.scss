@@ -1,0 +1,6 @@
+@import '../packages/react-ui/src/index';
+.markdown {
+  td:not(:first-child) {
+    word-break: break-word;
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "rootDir": "./",
+    "target": "ESNext",
+    "baseUrl": "./",
+    "types": ["vite/client"],
+    "paths": {
+      "@pkg/*": ["./packages/*/src"],
+      "@@/*": [".dumi/tmp/*"]
+    }
+  },
+  "exclude": ["node_modules", "dist"]
+}
