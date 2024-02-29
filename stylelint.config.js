@@ -78,7 +78,7 @@ module.exports = {
       'resize',
       'transition',
     ],
-    'scss/at-rule-no-unknown': [
+    'at-rule-no-unknown': [
       true,
       {
         ignoreAtRules: [
@@ -103,26 +103,14 @@ module.exports = {
         ignorePseudoClasses: ['deep', 'global'],
       },
     ],
-
     'font-family-no-missing-generic-family-keyword': null,
-    'block-opening-brace-space-before': 'always',
     'at-rule-empty-line-before': null,
     'no-descending-specificity': null,
     'rule-empty-line-before': 'never',
     'function-url-quotes': 'always',
     'property-no-unknown': null,
-    'color-hex-length': 'long',
-    'string-quotes': 'single', // double跟prettier冲突
-    'color-hex-case': 'lower',
     'no-empty-source': null,
-    'unit-case': null,
-    indentation: 2,
   },
-  extends: [
-    '@umijs/lint/dist/config/stylelint',
-    'stylelint-config-standard',
-    'stylelint-config-standard-scss',
-    'stylelint-config-prettier',
-  ],
+  extends: ['stylelint-config-standard', 'stylelint-config-standard-scss'],
   plugins: ['stylelint-order'],
 };
