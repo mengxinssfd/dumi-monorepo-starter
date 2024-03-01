@@ -10,6 +10,7 @@
     "internal/*"
   ],
   "scripts": {
+    "project:init": "tsx scripts/init.ts",
     "play:dev": "pnpm -C internal/playground start",
     "build:rollup": "tsx scripts/build.ts -t",
     "eject": "react-scripts eject",
